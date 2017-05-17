@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		32FE31081ECC1DC400B16D42 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FE31071ECC1DC400B16D42 /* main.cpp */; };
+		32FE31111ECC1E4000B16D42 /* libtesseract.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FE310E1ECC1E4000B16D42 /* libtesseract.3.dylib */; };
+		32FE31121ECC1E4000B16D42 /* libtesseract.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FE310F1ECC1E4000B16D42 /* libtesseract.a */; };
+		32FE31131ECC1E4000B16D42 /* libtesseract.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FE31101ECC1E4000B16D42 /* libtesseract.dylib */; };
+		32FE31171ECC1FF100B16D42 /* liblept.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FE31141ECC1FF100B16D42 /* liblept.5.dylib */; };
+		32FE31181ECC1FF100B16D42 /* liblept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FE31151ECC1FF100B16D42 /* liblept.a */; };
+		32FE31191ECC1FF100B16D42 /* liblept.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FE31161ECC1FF100B16D42 /* liblept.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		32FE31041ECC1DC400B16D42 /* Tesseract */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tesseract; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FE31071ECC1DC400B16D42 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		32FE310E1ECC1E4000B16D42 /* libtesseract.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtesseract.3.dylib; sourceTree = "<group>"; };
+		32FE310F1ECC1E4000B16D42 /* libtesseract.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtesseract.a; sourceTree = "<group>"; };
+		32FE31101ECC1E4000B16D42 /* libtesseract.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtesseract.dylib; sourceTree = "<group>"; };
+		32FE31141ECC1FF100B16D42 /* liblept.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblept.5.dylib; sourceTree = "<group>"; };
+		32FE31151ECC1FF100B16D42 /* liblept.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblept.a; sourceTree = "<group>"; };
+		32FE31161ECC1FF100B16D42 /* liblept.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblept.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32FE31181ECC1FF100B16D42 /* liblept.a in Frameworks */,
+				32FE31191ECC1FF100B16D42 /* liblept.dylib in Frameworks */,
+				32FE31171ECC1FF100B16D42 /* liblept.5.dylib in Frameworks */,
+				32FE31121ECC1E4000B16D42 /* libtesseract.a in Frameworks */,
+				32FE31131ECC1E4000B16D42 /* libtesseract.dylib in Frameworks */,
+				32FE31111ECC1E4000B16D42 /* libtesseract.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +61,12 @@
 			children = (
 				32FE31061ECC1DC400B16D42 /* Tesseract */,
 				32FE31051ECC1DC400B16D42 /* Products */,
+				32FE310E1ECC1E4000B16D42 /* libtesseract.3.dylib */,
+				32FE310F1ECC1E4000B16D42 /* libtesseract.a */,
+				32FE31101ECC1E4000B16D42 /* libtesseract.dylib */,
+				32FE31141ECC1FF100B16D42 /* liblept.5.dylib */,
+				32FE31151ECC1FF100B16D42 /* liblept.a */,
+				32FE31161ECC1FF100B16D42 /* liblept.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +191,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -209,6 +235,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -218,6 +246,10 @@
 		32FE310C1ECC1DC400B16D42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -225,6 +257,10 @@
 		32FE310D1ECC1DC400B16D42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
